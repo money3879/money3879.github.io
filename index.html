@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
   <style>
     .container{
-      margin: 0 auto;
+      margin:0 auto;
       width: 600px;
     }
     h1 {
@@ -26,8 +26,8 @@
   </style>
   <div class="container">
     <div class="row">
-      <div class="col-xs-8">
-        <h1 class="test-center">This is my <a href="http://www.facebook.com/profile.php?id=100000885155304">Facebook</a></h1>
+      <div class="col-xs-4">
+        <h1 class="text-center">This is my <a href="http://www.facebook.com/profile.php?id=100000885155304">Facebook</a></h1>
       </div>
       <div class="col-xs-4">
         <img class="img-responsive thin-black-border" width="50" height="50" src="https://th.bing.com/th/id/OIP.GKwTvrpiwXT8shVcdwVlKQAAAA?pid=Api&rs=1" alt="蠟筆小新">
@@ -43,11 +43,25 @@
       
       <img class="img-responsive" width="150" height="150" src="http://newcongress.tw/wp-content/uploads/2016/09/%E8%BC%94%E4%BB%81%E5%A4%A7%E5%AD%B8.jpg" alt="輔仁大學">
     </ul>
-    <p>興趣:</p>
-    <ol>
-      <li><img width="150" height="150" src="https://www.crazy-tutorial.com/wp-content/uploads/2018/08/118.png" alt="籃球"></li>
-      <li><img width="150" height="150" src="https://th.bing.com/th/id/OIP.4CtkELD-H8JXRXR-HQabcwHaE8?pid=Api&rs=1" alt="小說"></li>
-      <li><img width="150" height="150" src="http://5b0988e595225.cdn.sohucs.com/images/20170817/f48c6734853348ff9f9f473f6d640ef1.gif" alt="音樂"></li>
-    </ol>
+    <div class="row">
+      <p>興趣:</p>
+      <ol>
+        <div class="col-xs-4">
+        <li><button class="btn btn-block btn-warning">顯示</button>
+        <img width="150" height="150" src="https://www.crazy-tutorial.com/wp-content/uploads/2018/08/118.png" alt="籃球">
+        </li>
+        </div>
+        <div class="col-xs-4">
+        <li><button class="btn btn-block btn-warning">顯示</button>
+        <img width="150" height="150" src="https://th.bing.com/th/id/OIP.4CtkELD-H8JXRXR-HQabcwHaE8?pid=Api&rs=1" alt="小說">
+        </li>
+        </div>
+        <div class="col-xs-4">
+        <li><button class="btn btn-block btn-warning">顯示</button>
+        <img width="150" height="150" src="http://5b0988e595225.cdn.sohucs.com/images/20170817/f48c6734853348ff9f9f473f6d640ef1.gif" alt="音樂">
+        </li>
+        </div>
+      </ol>
+    </div>
   </div>
 </html>
