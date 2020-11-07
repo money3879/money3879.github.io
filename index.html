@@ -3,16 +3,19 @@
   <head>
     <title>BORUI</title>
   </head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
   $(document).ready(function() {
     $("#button1").click(function(){
-    $("#div1").show();
+    $("#div1").fadeToggle("slow");
     });
     
     $("#button2").click(function(){
-    $("#div1").hide();
+    $("#div2").fadeToggle("slow");
+    });
+    
+    $("#button3").click(function(){
+    $("#div3").fadeToggle("slow");
     });
     
   });
@@ -61,12 +64,20 @@
     </ul>
     
     <h3>興趣:</h3>
-    <div id="div1" style="display: block;">
+    
+    <button style="background-color:#30FFFF" id="button1">籃球</button>
+    <div id="div1" style="display: none;">
       <img src="https://www.crazy-tutorial.com/wp-content/uploads/2018/08/118.png">
+    </div>
+    
+    <button style="background-color:#F1F66D" id="button2">小說</button>
+    <div id="div2" style="display: none;">
       <img src="https://th.bing.com/th/id/OIP.4CtkELD-H8JXRXR-HQabcwHaE8?pid=Api&rs=1">
+    </div>
+    
+    <button style="background-color:#F66DD3" id="button3">音樂</button>
+    <div id="div3" style="display: none;">
       <img src="http://5b0988e595225.cdn.sohucs.com/images/20170817/f48c6734853348ff9f9f473f6d640ef1.gif">
     </div>
-    <button style="background-color:#30FFFF" id="button1">顯示圖片</button>
-    <button style="background-color:#F1F66D" id="button2">隱藏圖片</button> 
   </div>
 </html>
